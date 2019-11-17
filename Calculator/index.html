@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+<body>
+    <form>
+    <div class="calculator">
+        <div class="screen-area">
+            <span class="title">The Calculator <span class="by">by</span> <span class="creator">Spektr_001</span></span>
+            <input class="screen" id="screen" placeholder="0" disable>
+        </div>
+        <div class="keys">
+            <div>
+                <input class="btn" type="button" value="9" onclick="insert(9)">
+                <input class="btn" type="button" value="6" onclick="insert(6)">
+                <input class="btn" type="button" value="3" onclick="insert(3)">
+                <input class="btn" type="button" value=">" onclick="back()">
+            </div>
+            <div>
+                <input class="btn" type="button" value="8" onclick="insert(8)">
+                <input class="btn" type="button" value="5" onclick="insert(5)">
+                <input class="btn" type="button" value="2" onclick="insert(2)">
+                
+            </div>
+            <div>
+                <input class="btn" type="button" value="7" onclick="insert(7)">
+                <input class="btn" type="button" value="4" onclick="insert(4)">
+                <input class="btn" type="button" value="1" onclick="insert(1)">
+            </div>
+            <div>
+                <input class="btn" type="button" value="+" onclick="insert('+')">
+                <input class="btn" type="button" value="-" onclick="insert('-')">
+                <input class="btn" type="button" value="*" onclick="insert('*')">
+                <input class="btn" type="button" value="C" onclick="clearInput()">
+            </div>
+            <div>
+                <input class="btn" type="button" value="/" onclick="insert('/')">
+                <input class="equally" type="button" value="=" onclick="equal()">
+            </div>
+        </div>
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
